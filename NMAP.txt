@@ -1,0 +1,144 @@
+# Nmap 7.97 scan initiated Mon Jul  7 02:16:16 2025 as: nmap -A -T4 -p- -oN macbook_nmap_full_report.txt 192.168.0.113
+Nmap scan report for 192.168.0.113
+Host is up (0.000030s latency).
+Not shown: 65526 closed tcp ports (conn-refused)
+PORT      STATE SERVICE            VERSION
+88/tcp    open  tcpwrapped
+445/tcp   open  microsoft-ds?
+5000/tcp  open  rtsp
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 0
+|     X-Apple-RequestReceivedTimestamp: 4563900
+|   GetRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 0
+|     X-Apple-RequestReceivedTimestamp: 4558879
+|   HTTPOptions: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 0
+|     X-Apple-RequestReceivedTimestamp: 4563876
+|   RTSPRequest: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 1
+|     X-Apple-RequestReceivedTimestamp: 4558901
+|   SIPOptions: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     CSeq: 42 OPTIONS
+|     X-Apple-ProcessingTime: 0
+|_    X-Apple-RequestReceivedTimestamp: 4563905
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+7000/tcp  open  rtsp
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+|_irc-info: Unable to open connection
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 0
+|     X-Apple-RequestReceivedTimestamp: 4563906
+|   GetRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 0
+|     X-Apple-RequestReceivedTimestamp: 4563878
+|   HTTPOptions: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 0
+|     X-Apple-RequestReceivedTimestamp: 4563901
+|   RTSPRequest: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     X-Apple-ProcessingTime: 5
+|     X-Apple-RequestReceivedTimestamp: 4558872
+|   SIPOptions: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/860.7.1
+|     CSeq: 42 OPTIONS
+|     X-Apple-ProcessingTime: 0
+|_    X-Apple-RequestReceivedTimestamp: 4563910
+8000/tcp  open  http               Splunkd httpd
+|_http-server-header: Splunkd
+| http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_Requested resource was http://192.168.0.113:8000/en-US/account/login?return_to=%2Fen-US%2F
+| http-robots.txt: 1 disallowed entry 
+|_/
+8089/tcp  open  ssl/http           Splunkd httpd
+|_http-title: splunkd
+|_http-server-header: Splunkd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Not valid before: 2025-07-01T20:05:09
+|_Not valid after:  2028-06-30T20:05:09
+| http-robots.txt: 1 disallowed entry 
+|_/
+8191/tcp  open  mongodb            MongoDB 3.6 after 3.6.3, or 3.7.3 or later
+8834/tcp  open  ssl/nessus-xmlrpc?
+| ssl-cert: Subject: commonName=Shivams-MacBook-Air.local/organizationName=Nessus Users United/stateOrProvinceName=NY/countryName=US
+| Not valid before: 2025-06-30T00:12:20
+|_Not valid after:  2029-06-29T00:12:20
+|_ssl-date: TLS randomness does not represent time
+52401/tcp open  unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5000-TCP:V=7.97%I=7%D=7/7%Time=686AE0A0%P=arm-apple-darwin24.4.0%r(
+SF:GetRequest,8D,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x200\r\
+SF:nServer:\x20AirTunes/860\.7\.1\r\nX-Apple-ProcessingTime:\x200\r\nX-App
+SF:le-RequestReceivedTimestamp:\x204558879\r\n\r\n")%r(RTSPRequest,8D,"RTS
+SF:P/1\.0\x20403\x20Forbidden\r\nContent-Length:\x200\r\nServer:\x20AirTun
+SF:es/860\.7\.1\r\nX-Apple-ProcessingTime:\x201\r\nX-Apple-RequestReceived
+SF:Timestamp:\x204558901\r\n\r\n")%r(HTTPOptions,8D,"HTTP/1\.1\x20403\x20F
+SF:orbidden\r\nContent-Length:\x200\r\nServer:\x20AirTunes/860\.7\.1\r\nX-
+SF:Apple-ProcessingTime:\x200\r\nX-Apple-RequestReceivedTimestamp:\x204563
+SF:876\r\n\r\n")%r(FourOhFourRequest,8D,"HTTP/1\.1\x20403\x20Forbidden\r\n
+SF:Content-Length:\x200\r\nServer:\x20AirTunes/860\.7\.1\r\nX-Apple-Proces
+SF:singTime:\x200\r\nX-Apple-RequestReceivedTimestamp:\x204563900\r\n\r\n"
+SF:)%r(SIPOptions,9F,"RTSP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x20
+SF:0\r\nServer:\x20AirTunes/860\.7\.1\r\nCSeq:\x2042\x20OPTIONS\r\nX-Apple
+SF:-ProcessingTime:\x200\r\nX-Apple-RequestReceivedTimestamp:\x204563905\r
+SF:\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7000-TCP:V=7.97%I=7%D=7/7%Time=686AE0A5%P=arm-apple-darwin24.4.0%r(
+SF:RTSPRequest,8D,"RTSP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x200\r
+SF:\nServer:\x20AirTunes/860\.7\.1\r\nX-Apple-ProcessingTime:\x205\r\nX-Ap
+SF:ple-RequestReceivedTimestamp:\x204558872\r\n\r\n")%r(GetRequest,8D,"HTT
+SF:P/1\.1\x20403\x20Forbidden\r\nContent-Length:\x200\r\nServer:\x20AirTun
+SF:es/860\.7\.1\r\nX-Apple-ProcessingTime:\x200\r\nX-Apple-RequestReceived
+SF:Timestamp:\x204563878\r\n\r\n")%r(HTTPOptions,8D,"HTTP/1\.1\x20403\x20F
+SF:orbidden\r\nContent-Length:\x200\r\nServer:\x20AirTunes/860\.7\.1\r\nX-
+SF:Apple-ProcessingTime:\x200\r\nX-Apple-RequestReceivedTimestamp:\x204563
+SF:901\r\n\r\n")%r(FourOhFourRequest,8D,"HTTP/1\.1\x20403\x20Forbidden\r\n
+SF:Content-Length:\x200\r\nServer:\x20AirTunes/860\.7\.1\r\nX-Apple-Proces
+SF:singTime:\x200\r\nX-Apple-RequestReceivedTimestamp:\x204563906\r\n\r\n"
+SF:)%r(SIPOptions,9F,"RTSP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x20
+SF:0\r\nServer:\x20AirTunes/860\.7\.1\r\nCSeq:\x2042\x20OPTIONS\r\nX-Apple
+SF:-ProcessingTime:\x200\r\nX-Apple-RequestReceivedTimestamp:\x204563910\r
+SF:\n\r\n");
+
+Host script results:
+| smb2-time: 
+|   date: 2025-07-06T20:46:17
+|_  start_date: N/A
+|_clock-skew: -2m42s
+| smb2-security-mode: 
+|   3.0.2: 
+|_    Message signing enabled and required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul  7 02:19:11 2025 -- 1 IP address (1 host up) scanned in 174.56 seconds
