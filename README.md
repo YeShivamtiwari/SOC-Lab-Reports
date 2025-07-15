@@ -40,7 +40,7 @@ This project demonstrates my ability to:
 
 ## 📌 Contact
 
-**📧 Mobile:** 7310138362
+**📞 Mobile:** +91 7310138362 
 **📧 Email:** YeShivamtiwari@hotmail.com  
 **🔗 LinkedIn:** [linkedin.com/in/yeshivamtiwari](https://linkedin.com/in/yeshivamtiwari)  
 **📄 Resume:** [View Resume ](https://drive.google.com/file/d/1tlnsEa8Ts0kQBQkE6z92onKBusTxstcl/view?usp=drivesdk))
